@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^Set-Location 'c:\\\\Users\\\\Admin\\\\Desktop\\\\norvian\\.tech\\\\gg'; Select-String -Path styles\\.css -Pattern 'hero-portrait::before\\|hero-gradient\\|--hero-fade-base\\|--hero-fade-mid\\|--hero-fade-end\\|hero-portrait img' \\| ForEach-Object \\{ \\$_\\.Line \\}$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

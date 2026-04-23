@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maria Renee Escobar | Asesoria financiera experta en Grupo Trade Corp">
+    <link rel="canonical" href="https://norvian.tech/gg/">
+    <meta property="og:title" content="Maria Renee Escobar | Asesoria Financiera Experta">
+    <meta property="og:description" content="Conecte con Maria Renee Escobar para asesoria financiera experta y acompanamiento personalizado.">
+    <meta property="og:site_name" content="Grupo Trade Corp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://norvian.tech/gg/">
+    <meta property="og:image" content="https://norvian.tech/gg/images/maria.png">
+    <meta property="og:image:secure_url" content="https://norvian.tech/gg/images/maria.png">
+    <meta property="og:image:alt" content="Maria Renee Escobar - Asesora financiera de Grupo Trade Corp">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="1200">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Maria Renee Escobar | Asesoria Financiera Experta">
+    <meta name="twitter:description" content="Conecte con Maria Renee Escobar para asesoria financiera experta y acompanamiento personalizado.">
+    <meta name="twitter:image" content="https://norvian.tech/gg/images/maria.png">
+    <title>Maria Renee Escobar | Asesora</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0e1427',
+                        gold: '#d4a853'
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        (function () {
+            var savedTheme = 'dark';
+            try {
+                savedTheme = localStorage.getItem('theme') || 'dark';
+            } catch (error) {
+                savedTheme = 'dark';
+            }
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+        })();
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-primary antialiased">
+
+    <header class="fixed top-0 inset-x-0 z-50 bg-white dark:bg-primary">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <span class="site-logo-mark" aria-hidden="true">
+                    <img src="images/logo.svg" alt="" class="site-logo-image">
+                </span>
+                <div class="hidden sm:block">
+                    <p class="text-sm font-semibold text-primary dark:text-white">Grupo Trade Corp</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Crecimiento con criterio</p>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#hero" class="nav-link active">Inicio</a>
+                <a href="#about" class="nav-link">Nosotros</a>
+                <a href="#testimonials" class="nav-link">Testimonios</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <button id="theme-toggle" class="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-white/10 transition-colors" aria-label="Cambiar tema">
+                    <svg id="theme-icon-sun" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                    </svg>
+                    <svg id="theme-icon-moon" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 1012 21a9.003 9.003 0 008.354-5.646z"/>
+                    </svg>
+                </button>
+                <button id="menu-toggle" class="md:hidden p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-white/10 transition-colors" aria-label="Menu">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <aside id="sidebar" class="fixed inset-0 z-40 hidden">
+        <div class="sidebar-overlay"></div>
+        <div class="sidebar-panel">
+            <div class="p-4">
+                <div class="flex justify-between items-center mb-8">
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">Menu</p>
+                        <p class="font-semibold text-lg">Navegacion</p>
+                    </div>
+                    <button id="close-sidebar" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/10 transition-colors" aria-label="Cerrar menu">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="flex flex-col gap-2">
+                    <a href="#hero" class="sidebar-link">Inicio</a>
+                    <a href="#about" class="sidebar-link">Nosotros</a>
+                    <a href="#testimonials" class="sidebar-link">Testimonios</a>
+                    <a href="#contact" class="sidebar-link">Contacto</a>
+                    <a href="#contact" class="mt-4 px-4 py-3 bg-primary text-white dark:bg-gold dark:text-primary text-center rounded-xl font-semibold">Agendar contacto</a>
+                </nav>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <section id="hero" class="pt-16 sm:pt-20 lg:pt-24 pb-8 sm:pb-12 lg:pb-16 px-4 relative overflow-hidden">
+            <div class="hero-atmosphere" aria-hidden="true">
+                <span class="hero-veil hero-veil-a"></span>
+                <span class="hero-veil hero-veil-b"></span>
+                <span class="hero-veil hero-veil-c"></span>
+            </div>
+            <div class="max-w-6xl mx-auto relative">
+                <div class="hero-shell" data-reveal style="--reveal-delay: 0.02s;">
+                    <div class="grid lg:grid-cols-2 gap-5 sm:gap-8 lg:gap-14 items-center">
+                        <div class="space-y-4 sm:space-y-6 order-1">
+                            <div class="space-y-4" data-reveal style="--reveal-delay: 0.14s;">
+                                <h1 class="display-title text-3xl sm:text-5xl lg:text-6xl leading-none">
+                                    <span class="hero-title-line">Multiplique su patrimonio con</span>
+                                    <span class="hero-rotating-block">
+                                        <span id="hero-rotating-word" class="text-gold hero-rotating-word">Disciplina</span>
+                                    </span>
+                                    <!-- <span class="hero-title-line">y visi&oacute;n</span> -->
+                                </h1>
+                                <p class="hero-copy text-sm sm:text-lg">
+                                    Logre sus metas financieras con nuestra asesor&iacute;a experta a corto plazo.
+                                </p>
+                            </div>
+
+                            <ul class="hero-checklist" data-reveal style="--reveal-delay: 0.2s;">
+                                <li class="hero-check-item">
+                                    <span class="hero-check-icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    <span>Diagnostico personalizado</span>
+                                </li>
+                                <li class="hero-check-item">
+                                    <span class="hero-check-icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    <span>Dise&ntilde;o de una estrategia a la medida para lograr su meta</span>
+                                </li>
+                                <li class="hero-check-item">
+                                    <span class="hero-check-icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                    <span>Ejecuci&oacute;n del plan con disciplina</span>
+                                </li>
+                            </ul>
+
+                            <div class="flex flex-wrap gap-3" data-reveal style="--reveal-delay: 0.26s;">
+                                <a id="hero-contact-btn" href="#contact" class="hero-btn hero-btn-contact px-6 py-3 bg-primary text-white dark:bg-gold dark:text-primary rounded-xl font-semibold text-sm">Contactar ahora</a>
+                                <a id="hero-services-btn" href="#about" class="hero-btn hero-btn-services px-6 py-3 border border-slate-300 dark:border-white/15 rounded-xl font-semibold text-sm">Ver servicios</a>
+                            </div>
+
+                            <div class="hero-metrics" data-reveal style="--reveal-delay: 0.32s;">
+                                <div class="metric-card">
+                                    <span class="metric-value">+100</span>
+                                    <span class="metric-label">clientes activos</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-value metric-value-name">Maria Rene&eacute;</span>
+                                    <span class="metric-label">Asesor</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-2">
+                            <div class="hero-visual">
+                                <div class="hero-portrait" data-reveal style="--reveal-delay: 0.12s;">
+                                    <img src="images/maria.png" alt="Maria Rene&eacute;" class="w-full h-full object-contain">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 px-4 relative overflow-hidden" data-section-reveal>
+            <div class="about-bg"></div>
+            <div class="max-w-6xl mx-auto relative">
+                <div class="section-heading">
+                    <span class="section-kicker">La base del trabajo</span>
+                    <h2 class="display-title text-3xl sm:text-4xl lg:text-5xl leading-none">
+                        Misi&oacute;n, visi&oacute;n y valores
+                    </h2>
+                  
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-5">
+                    <article class="about-card">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-primary dark:bg-gold flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-rocket text-white dark:text-primary text-sm"></i>
+                            </div>
+                            <h3 class="font-semibold text-lg">Misi&oacute;n</h3>
+                        </div>
+                        <p class="text-sm leading-7">
+                            Desarrollar estrategias fundamentadas en disciplina, experiencia y resultados comprobables que impulsen a personas y empresas a generar oportunidades y construir un patrimonio solido y sostenible.
+                        </p>
+                    </article>
+
+                    <article class="about-card">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-primary dark:bg-gold flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-eye text-white dark:text-primary text-sm"></i>
+                            </div>
+                            <h3 class="font-semibold text-lg">Visi&oacute;n</h3>
+                        </div>
+                        <p class="text-sm leading-7">
+                            Convertirnos en un referente para personas y empresas disciplinadas y estrategicas, capaces de tomar decisiones inteligentes y construir crecimiento con consistencia.
+                        </p>
+                    </article>
+
+                    <article class="about-card">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-primary dark:bg-gold flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-heart text-white dark:text-primary text-sm"></i>
+                            </div>
+                            <h3 class="font-semibold text-lg">Valores</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="value-row">
+                                <i class="fa-solid fa-check"></i>
+                                <div>
+                                    <p class="text-sm font-semibold">Disciplina</p>
+                                    <p class="text-xs opacity-75">Hacemos lo necesario, incluso cuando no es facil.</p>
+                                </div>
+                            </div>
+                            <div class="value-row">
+                                <i class="fa-solid fa-check"></i>
+                                <div>
+                                    <p class="text-sm font-semibold">Criterio</p>
+                                    <p class="text-xs opacity-75">No actuamos por impulso, sino por entendimiento.</p>
+                                </div>
+                            </div>
+                            <div class="value-row">
+                                <i class="fa-solid fa-check"></i>
+                                <div>
+                                    <p class="text-sm font-semibold">Responsabilidad</p>
+                                    <p class="text-xs opacity-75">Cada resultado es consecuencia de nuestras decisiones.</p>
+                                </div>
+                            </div>
+                            <div class="value-row">
+                                <i class="fa-solid fa-check"></i>
+                                <div>
+                                    <p class="text-sm font-semibold">Crecimiento continuo</p>
+                                    <p class="text-xs opacity-75">Nunca dejamos de aprender ni de mejorar.</p>
+                                </div>
+                            </div>
+                            <div class="value-row">
+                                <i class="fa-solid fa-check"></i>
+                                <div>
+                                    <p class="text-sm font-semibold">Valor</p>
+                                    <p class="text-xs opacity-75">Aportar valor real es siempre la prioridad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-20 px-4 relative overflow-hidden">
+            <div class="squares-bg"></div>
+            <div class="max-w-6xl mx-auto relative">
+                <div class="section-heading section-heading-light" data-reveal style="--reveal-delay: 0.04s;">
+                    <span class="section-kicker section-kicker-light">Confianza construida</span>
+                    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+                        <div class="max-w-2xl">
+                            <h2 class="display-title text-3xl sm:text-4xl lg:text-5xl leading-none">
+                                Testimonios con mejor presencia, orden y scroll horizontal
+                            </h2>
+                            <p class="section-copy section-copy-light">
+                                Ahora esta parte se comporta como una franja horizontal real, con tarjetas consistentes y una navegacion mucho mas limpia en movil y desktop.
+                            </p>
+                        </div>
+                        <div class="testimonial-controls" aria-label="Controles del carrusel de testimonios">
+                            <button type="button" class="testimonial-nav" data-direction="prev" aria-label="Mover testimonios a la izquierda">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <button type="button" class="testimonial-nav" data-direction="next" aria-label="Mover testimonios a la derecha">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-strip">
+                    <div class="testimonial-track scrollbar-hide" id="testimonial-container" tabindex="0" aria-label="Carrusel horizontal de testimonios">
+                        <article class="testimonial-card" data-reveal style="--reveal-delay: 0.08s;">
+                            <div class="testimonial-card-top">
+                                <span class="testimonial-badge">Cliente GTC</span>
+                                <div class="stars-container" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            </div>
+                            <p class="testimonial-quote">
+                                "Grupo Trade Corp cambio completamente mi perspectiva sobre la gestion del patrimonio. El crecimiento ha sido ordenado, claro y con mucha mas seguridad."
+                            </p>
+                            <div class="testimonial-meta">
+                                <div class="testimonial-avatar">CM</div>
+                                <div>
+                                    <p class="testimonial-name">Carlos Martinez</p>
+                                    <p class="testimonial-role">Empresario</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="testimonial-card" data-reveal style="--reveal-delay: 0.12s;">
+                            <div class="testimonial-card-top">
+                                <span class="testimonial-badge">Cliente GTC</span>
+                                <div class="stars-container" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            </div>
+                            <p class="testimonial-quote">
+                                "La consultoria personalizada y las estrategias globales multiplicaron mis ingresos. Lo mejor fue sentir que todo tenia una estructura y no solo buenas intenciones."
+                            </p>
+                            <div class="testimonial-meta">
+                                <div class="testimonial-avatar">MG</div>
+                                <div>
+                                    <p class="testimonial-name">Maria Gonzalez</p>
+                                    <p class="testimonial-role">Inversionista</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="testimonial-card" data-reveal style="--reveal-delay: 0.16s;">
+                            <div class="testimonial-card-top">
+                                <span class="testimonial-badge">Cliente GTC</span>
+                                <div class="stars-container" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            </div>
+                            <p class="testimonial-quote">
+                                "Lo que mas valoro de GTC es su enfoque analitico y la experiencia del equipo. Se nota cuando una estrategia esta pensada para sostener resultados."
+                            </p>
+                            <div class="testimonial-meta">
+                                <div class="testimonial-avatar">RD</div>
+                                <div>
+                                    <p class="testimonial-name">Roberto Diaz</p>
+                                    <p class="testimonial-role">Agricultor</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="testimonial-card" data-reveal style="--reveal-delay: 0.2s;">
+                            <div class="testimonial-card-top">
+                                <span class="testimonial-badge">Cliente GTC</span>
+                                <div class="stars-container" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            </div>
+                            <p class="testimonial-quote">
+                                "Desde la primera reunion senti orden. Me gusto que aterrizaron mi meta en un plan realista y despues me acompa&ntilde;aron a ejecutarlo paso a paso."
+                            </p>
+                            <div class="testimonial-meta">
+                                <div class="testimonial-avatar">AL</div>
+                                <div>
+                                    <p class="testimonial-name">Andrea Lopez</p>
+                                    <p class="testimonial-role">Emprendedora</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="testimonial-card" data-reveal style="--reveal-delay: 0.24s;">
+                            <div class="testimonial-card-top">
+                                <span class="testimonial-badge">Cliente GTC</span>
+                                <div class="stars-container" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            </div>
+                            <p class="testimonial-quote">
+                                "Antes tenia muchas ideas y poca estructura. Con GTC pase a tener claridad, prioridades y un seguimiento que realmente me mantuvo enfocado."
+                            </p>
+                            <div class="testimonial-meta">
+                                <div class="testimonial-avatar">DH</div>
+                                <div>
+                                    <p class="testimonial-name">Daniel Herrera</p>
+                                    <p class="testimonial-role">Comerciante</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="testimonial-card" data-reveal style="--reveal-delay: 0.28s;">
+                            <div class="testimonial-card-top">
+                                <span class="testimonial-badge">Cliente GTC</span>
+                                <div class="stars-container" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            </div>
+                            <p class="testimonial-quote">
+                                "La diferencia estuvo en la disciplina del proceso. No solo recibi recomendaciones; recibi una ruta clara para avanzar con confianza."
+                            </p>
+                            <div class="testimonial-meta">
+                                <div class="testimonial-avatar">SR</div>
+                                <div>
+                                    <p class="testimonial-name">Sofia Ramirez</p>
+                                    <p class="testimonial-role">Profesional independiente</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- <p class="testimonial-hint" data-reveal style="--reveal-delay: 0.12s;">Desliza con el dedo, el mouse, usa las flechas o deja que avance autom&aacute;ticamente cada 5 segundos.</p> -->
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="section-heading" >
+                    <span class="section-kicker">Conversemos</span>
+                    <h2 class="display-title text-3xl sm:text-4xl lg:text-5xl leading-none">
+                        Escribame y crezcamos juntos
+                    </h2>
+                    <p class="section-copy">
+                        Un buen contacto no deberia sentirse frio ni rigido. Aqui empieza una conversacion directa, clara y pensada para convertir una meta en un plan accionable.
+                    </p>
+                </div>
+
+                <div class="contact-shell">
+                    <div class="contact-stage" data-reveal style="--reveal-delay: 0.08s;">
+                        <div class="contact-stage-copy">
+                            <span class="contact-chip">Atencion directa</span>
+                            <h3 class="display-title text-3xl sm:text-4xl leading-none">
+                                Un proceso simple, cercano y con estructura
+                            </h3>
+                            <!-- <p>
+                                Cu&eacute;nteme su objetivo y construimos el siguiente paso con criterio. Nada de mensajes frios ni formularios impersonales: aqui comienza una conversacion guiada por estrategia.
+                            </p> -->
+                        </div>
+
+                        <div class="contact-accordion" data-contact-accordion>
+                            <article class="contact-accordion-item">
+                                <button type="button" class="contact-accordion-trigger" aria-expanded="false">
+                                    <span class="contact-step-number">01</span>
+                                    <span class="contact-accordion-text">
+                                        <span class="contact-accordion-title">Diagnostico inicial</span>
+                                    </span>
+                                    <span class="contact-accordion-icon" aria-hidden="true">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </span>
+                                </button>
+                                <div class="contact-accordion-panel">
+                                    <div class="contact-accordion-panel-inner">
+                                        <p>Escuchamos su meta, entendemos su contexto y detectamos el mejor punto de partida.</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contact-accordion-item">
+                                <button type="button" class="contact-accordion-trigger" aria-expanded="false">
+                                    <span class="contact-step-number">02</span>
+                                    <span class="contact-accordion-text">
+                                        <span class="contact-accordion-title">Estrategia clara</span>
+                                    </span>
+                                    <span class="contact-accordion-icon" aria-hidden="true">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </span>
+                                </button>
+                                <div class="contact-accordion-panel">
+                                    <div class="contact-accordion-panel-inner">
+                                        <p>Traducimos la idea en una ruta accionable, medible y aterrizada a su realidad.</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="contact-accordion-item">
+                                <button type="button" class="contact-accordion-trigger" aria-expanded="false">
+                                    <span class="contact-step-number">03</span>
+                                    <span class="contact-accordion-text">
+                                        <span class="contact-accordion-title">Seguimiento con disciplina</span>
+                                    </span>
+                                    <span class="contact-accordion-icon" aria-hidden="true">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </span>
+                                </button>
+                                <div class="contact-accordion-panel">
+                                    <div class="contact-accordion-panel-inner">
+                                        <p>No se trata solo de empezar bien, sino de sostener el avance con orden y enfoque.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="contact-direct-grid">
+                            <a href="tel:+50361276385" class="contact-direct-link">
+                                <span class="contact-direct-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </span>
+                                <span>
+                                    <strong>Telefono</strong>
+                                    <small>+503 61276385</small>
+                                </span>
+                            </a>
+                            <a href="mailto:escobarmaria.tcc@gmail.com" class="contact-direct-link">
+                                <span class="contact-direct-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <span>
+                                    <strong>Email</strong>
+                                    <small>escobarmaria.tcc@gmail.com</small>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="contact-stage-footer">
+                            <div class="contact-advisor">
+                                <div class="contact-advisor-mark">
+                                    <img src="images/mariarene.png" alt="Maria Rene&eacute;" class="contact-advisor-image">
+                                </div>
+                                <div>
+                                    <p class="contact-advisor-name">Maria Rene&eacute;</p>
+                                    <p class="contact-advisor-role">Asesora</p>
+                                </div>
+                            </div>
+                            <div class="contact-social-row">
+                                <span class="contact-social-label">Mis redes sociales</span>
+                               
+                                <a href="https://www.instagram.com/mariaaarenee_?igsh=MTh3ZGV4d2U0NGgyNA%3D%3D&utm_source=qr" class="contact-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                   <a href="https://www.instagram.com/mariaaarenee_?igsh=MTh3ZGV4d2U0NGgyNA%3D%3D&utm_source=qr" class="contact-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <!-- <a href="#" class="contact-social-link" aria-label="LinkedIn">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a> -->
+                                <a href="https://www.tiktok.com/@mariarenee__22?_r=1&_t=ZS-95n5lBgjv4J" class="contact-social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-card" data-reveal style="--reveal-delay: 0.12s;">
+                        <div class="contact-form-intro">
+                            <p class="text-xs uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400 mb-2">WhatsApp directo</p>
+                            <h3 class="font-semibold text-2xl mb-2">Envie su mensaje con contexto</h3>
+                            <!-- <p class="text-sm text-slate-600 dark:text-slate-300">
+                                Cada campo tiene su etiqueta para que el formulario se sienta mas claro, mejor ordenado y mucho mas profesional.
+                            </p> -->
+                        </div>
+
+                        <form id="contact-form" class="contact-form">
+                            <div class="contact-form-grid">
+                                <div class="contact-field">
+                                    <label class="contact-label" for="nombre">Nombre</label>
+                                    <input id="nombre" type="text" name="nombre" placeholder="Escriba su nombre" class="contact-input" required>
+                                </div>
+                                <div class="contact-field">
+                                    <label class="contact-label" for="telefono">Telefono</label>
+                                    <input id="telefono" type="tel" name="telefono" placeholder="Su numero de contacto" class="contact-input">
+                                </div>
+                            </div>
+                            <div class="contact-field">
+                                <label class="contact-label" for="email">Email</label>
+                                <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" class="contact-input" required>
+                            </div>
+                            <div class="contact-field">
+                                <label class="contact-label" for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cu&eacute;nteme su meta, su situacion actual o lo que le gustaria lograr." class="contact-input"></textarea>
+                            </div>
+                            <button type="submit" class="contact-submit">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                                Enviar mensaje
+                            </button>
+                            <p class="contact-note">
+                                Al enviarlo, abriremos WhatsApp con su mensaje estructurado para continuar la conversacion de forma directa.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer py-12 px-4">
+        <div class="max-w-6xl mx-auto footer-shell">
+            <div class="footer-brand" data-reveal style="--reveal-delay: 0.04s;">
+                <div class="footer-brand-head">
+                    <span class="site-logo-mark site-logo-mark-footer" aria-hidden="true">
+                        <img src="images/logo.svg" alt="" class="site-logo-image">
+                    </span>
+                    <div>
+                        <p class="font-semibold text-white">Grupo Trade Corp</p>
+                        <p class="text-sm text-slate-400">Asesoria financiera con estructura</p>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-300 max-w-md">
+                    Acompa&ntilde;amos decisiones financieras con disciplina, criterio y una estrategia que se puede ejecutar.
+                </p>
+                <a href="#contact" class="footer-cta">Agendar una conversacion</a>
+            </div>
+
+            <div class="footer-column" data-reveal style="--reveal-delay: 0.08s;">
+                <p class="footer-heading">Explorar</p>
+                <a href="index.html#hero">Inicio</a>
+                <a href="index.html#about">Nosotros</a>
+                <a href="index.html#testimonials">Testimonios</a>
+                <a href="index.html#contact">Contacto</a>
+            </div>
+
+            <div class="footer-column" data-reveal style="--reveal-delay: 0.12s;">
+                <p class="footer-heading">Legal</p>
+                <a href="terminos.html">Terminos y condiciones</a>
+                <a href="terminos.html#privacidad">Privacidad</a>
+                <a href="terminos.html#cookies">Cookies</a>
+            </div>
+
+            <div class="footer-column" data-reveal style="--reveal-delay: 0.16s;">
+                <p class="footer-heading">Contacto</p>
+                <a href="tel:+50361276385">+503 61276385</a>
+                <a href="mailto:escobarmaria.tcc@gmail.com">escobarmaria.tcc@gmail.com</a>
+                <p class="footer-muted">Maria Rene&eacute; &middot; Asesora</p>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto footer-bottom">
+            <p>Disciplina. Criterio. Valor.</p>
+            <div>&copy; 2026 Grupo Trade Corp</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

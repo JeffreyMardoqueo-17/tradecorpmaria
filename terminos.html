@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grupo Trade Corp - Terminos y condiciones">
+    <title>Grupo Trade Corp | Terminos y Condiciones</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0e1427',
+                        gold: '#d4a853'
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        (function () {
+            var savedTheme = 'dark';
+            try {
+                savedTheme = localStorage.getItem('theme') || 'dark';
+            } catch (error) {
+                savedTheme = 'dark';
+            }
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+        })();
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="terminos.css">
+</head>
+<body>
+    <div class="reading-progress" aria-hidden="true">
+        <div id="reading-progress-bar" class="reading-progress-bar"></div>
+    </div>
+
+    <header class="legal-header">
+        <div class="legal-header-inner">
+            <a href="index.html" class="brand">
+                <span class="brand-mark" aria-hidden="true">
+                    <img src="images/logo.svg" alt="" class="brand-logo">
+                </span>
+                <span class="brand-copy">
+                    <strong>Grupo Trade Corp</strong>
+                    <small>Lectura legal breve</small>
+                </span>
+            </a>
+
+            <nav class="desktop-nav" aria-label="Navegacion legal">
+                <a href="index.html">Inicio</a>
+                <a href="#uso">Uso</a>
+                <a href="#principios">Principios</a>
+                <a href="#privacidad">Privacidad</a>
+                <a href="#contacto-legal">Contacto</a>
+            </nav>
+
+            <div class="header-actions">
+                <button id="theme-toggle" class="icon-button" aria-label="Cambiar tema">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                    </svg>
+                </button>
+                <button id="menu-toggle" class="icon-button mobile-only" aria-label="Abrir menu">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <aside id="sidebar" class="mobile-sidebar hidden">
+        <div class="mobile-sidebar-overlay"></div>
+        <div class="mobile-sidebar-panel">
+            <div class="mobile-sidebar-head">
+                <div>
+                    <p class="mobile-sidebar-kicker">Menu</p>
+                    <p class="mobile-sidebar-title">Contenido</p>
+                </div>
+                <button id="close-sidebar" class="icon-button" aria-label="Cerrar menu">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <nav class="mobile-sidebar-links">
+                <a href="#uso">Uso del sitio</a>
+                <a href="#servicio">Alcance del servicio</a>
+                <a href="#principios">Principios</a>
+                <a href="#privacidad">Privacidad</a>
+                <a href="#cookies">Cookies</a>
+                <a href="#contacto-legal">Contacto legal</a>
+                <a href="index.html#contact" class="mobile-sidebar-cta">Volver al contacto</a>
+            </nav>
+        </div>
+    </aside>
+
+    <main class="legal-page">
+        <section class="legal-intro">
+            <p class="legal-kicker">Documento breve</p>
+            <h1>Terminos y condiciones</h1>
+            <p class="legal-intro-copy">
+                Version clara y rapida para entender como funciona este sitio, que cubre nuestro servicio y como manejamos su informacion.
+            </p>
+            <div class="legal-meta">
+                <span>Lectura estimada: 3 min</span>
+                <span>Actualizado: 22 abril 2026</span>
+            </div>
+        </section>
+
+        <div class="legal-layout">
+            <aside class="legal-sidebar">
+                <div class="legal-sidebar-inner">
+                    <p class="legal-sidebar-kicker">Contenido</p>
+                    <nav id="legal-toc" class="legal-toc" aria-label="Tabla de contenido">
+                        <a href="#uso" data-section-link="uso">Uso del sitio</a>
+                        <a href="#servicio" data-section-link="servicio">Alcance del servicio</a>
+                        <a href="#principios" data-section-link="principios">Principios</a>
+                        <a href="#privacidad" data-section-link="privacidad">Privacidad</a>
+                        <a href="#cookies" data-section-link="cookies">Cookies</a>
+                        <a href="#contacto-legal" data-section-link="contacto-legal">Contacto legal</a>
+                    </nav>
+                    <div class="legal-sidebar-read">
+                        <span>Leyendo ahora</span>
+                        <strong id="current-section-label">Uso del sitio</strong>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="legal-main-column">
+                <section id="uso" class="legal-section">
+                    <p class="legal-section-index">01</p>
+                    <h2>Uso del sitio</h2>
+                    <p>Este sitio presenta informacion institucional y comercial de Grupo Trade Corp. Al navegarlo, acepta estas condiciones generales.</p>
+                    <ul class="legal-list">
+                        <li>Puede usarlo para conocer servicios, leer informacion y contactarnos.</li>
+                        <li>El contenido no reemplaza una asesoria personalizada.</li>
+                        <li>Podemos actualizar textos, enlaces o secciones cuando sea necesario.</li>
+                    </ul>
+                </section>
+
+                <section id="servicio" class="legal-section">
+                    <p class="legal-section-index">02</p>
+                    <h2>Alcance del servicio</h2>
+                    <p>Nuestro trabajo parte de diagnostico, estrategia y ejecucion disciplinada. Los resultados dependen del contexto, las decisiones y la implementacion real.</p>
+                    <ul class="legal-list">
+                        <li>La asesoria empieza despues de contacto directo y evaluacion inicial.</li>
+                        <li>No prometemos resultados identicos para todos los casos.</li>
+                        <li>Cada decision financiera debe tomarse con criterio y responsabilidad.</li>
+                    </ul>
+                </section>
+
+                <section id="principios" class="legal-section">
+                    <p class="legal-section-index">03</p>
+                    <h2>Principios</h2>
+
+                    <div class="legal-subsection">
+                        <h3>Mision</h3>
+                        <p>Desarrollar estrategias fundamentadas en disciplina, experiencia y resultados comprobables para ayudar a personas y empresas a generar oportunidades y construir un patrimonio solido y sostenible.</p>
+                    </div>
+
+                    <div class="legal-subsection">
+                        <h3>Vision</h3>
+                        <p>Convertirnos en un referente en la formacion de personas y empresas disciplinadas y estrategicas, capaces de tomar decisiones inteligentes y construir un patrimonio solido y sostenible.</p>
+                    </div>
+
+                    <div class="legal-values" aria-label="Valores del servicio">
+                        <article class="legal-value">
+                            <span>1</span>
+                            <div>
+                                <strong>Disciplina</strong>
+                                <p>Hacemos lo necesario, incluso cuando no es facil. La constancia sostiene el resultado real.</p>
+                            </div>
+                        </article>
+                        <article class="legal-value">
+                            <span>2</span>
+                            <div>
+                                <strong>Criterio</strong>
+                                <p>No actuamos por impulso. Entender bien es mas importante que actuar rapido.</p>
+                            </div>
+                        </article>
+                        <article class="legal-value">
+                            <span>3</span>
+                            <div>
+                                <strong>Responsabilidad</strong>
+                                <p>Cada resultado nace de decisiones. Asumimos, aprendemos y mejoramos.</p>
+                            </div>
+                        </article>
+                        <article class="legal-value">
+                            <span>4</span>
+                            <div>
+                                <strong>Crecimiento continuo</strong>
+                                <p>Nunca dejamos de aprender. Evolucionar tambien es parte del proceso.</p>
+                            </div>
+                        </article>
+                        <article class="legal-value">
+                            <span>5</span>
+                            <div>
+                                <strong>Valor</strong>
+                                <p>Aportar valor es prioridad. El crecimiento propio empieza sirviendo a otros.</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="privacidad" class="legal-section">
+                    <p class="legal-section-index">04</p>
+                    <h2>Privacidad</h2>
+                    <p>Los datos que comparte por formulario, correo o WhatsApp se usan solo para responder su consulta y dar seguimiento a la conversacion.</p>
+                    <ul class="legal-list">
+                        <li>No vendemos informacion personal a terceros.</li>
+                        <li>Solo pedimos datos necesarios para responder mejor.</li>
+                        <li>Puede solicitar correccion o retiro de sus datos por contacto directo.</li>
+                    </ul>
+                </section>
+
+                <section id="cookies" class="legal-section">
+                    <p class="legal-section-index">05</p>
+                    <h2>Cookies</h2>
+                    <p>Este sitio puede usar cookies tecnicas o almacenamiento local para recordar preferencias basicas, como el tema visual y ciertas mejoras de navegacion.</p>
+                    <ul class="legal-list">
+                        <li>No usamos esta version del sitio para fines invasivos.</li>
+                        <li>Puede gestionar o eliminar esas preferencias desde su navegador.</li>
+                    </ul>
+                </section>
+
+                <section id="contacto-legal" class="legal-section">
+                    <p class="legal-section-index">06</p>
+                    <h2>Contacto legal</h2>
+                    <p>Si necesita una aclaracion sobre estas condiciones o desea una revision mas formal, puede escribirnos directamente.</p>
+                    <div class="legal-contact-row">
+                        <div class="legal-contact-item">
+                            <strong>Email</strong>
+                            <a href="mailto:escobarmaria.tcc@gmail.com">escobarmaria.tcc@gmail.com</a>
+                        </div>
+                        <div class="legal-contact-item">
+                            <strong>Telefono</strong>
+                            <a href="tel:+50361276385">+503 61276385</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="legal-footer">
+        <div class="legal-footer-inner">
+            <a href="index.html" class="brand brand-footer">
+                <span class="brand-mark" aria-hidden="true">
+                    <img src="images/logo.svg" alt="" class="brand-logo">
+                </span>
+                <span class="brand-copy">
+                    <strong>Grupo Trade Corp</strong>
+                    <small>Referencia general</small>
+                </span>
+            </a>
+            <p class="legal-footer-copy">Lectura breve para orientacion general. Para una revision puntual, escribanos.</p>
+            <a href="index.html#contact" class="legal-footer-link">Volver al contacto</a>
+        </div>
+    </footer>
+
+    <script src="terminos.js"></script>
+</body>
+</html>
