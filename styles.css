@@ -678,7 +678,7 @@ main {
 
 .hero-portrait {
     position: relative;
-    width: clamp(250px, 36vw, 500px);
+    width: clamp(250px, 36vw, 400px);
     min-height: 0;
     padding: 0;
     border-radius: 0;
